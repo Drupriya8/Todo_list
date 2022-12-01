@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.todo-btn {
+    /* min-height: 100%; */
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
