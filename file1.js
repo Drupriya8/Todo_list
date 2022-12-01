@@ -32,4 +32,23 @@ function saveTodo(e) {
     }
     
   }
-  removetodo()
+  // removetodo()
+
+
+
+
+  let celcius = document.querySelector(".celcius")
+  let fahrenheit = document.querySelector(".Fahrenheit")
+  let convert = document.querySelector(".convertform")
+
+  convert.addEventListener("submit" , converttodo)
+ 
+
+  function converttodo(e){
+    e.preventDefault()
+    fahrenheit.innerText = (celcius.value) * 9/5 + 32
+    console.log(celcius);
+
+  }
+  
+ 
