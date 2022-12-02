@@ -51,4 +51,51 @@ function saveTodo(e) {
 
   }
   
+
+
+  let signupform = document.querySelector(".signup-form")
+  let username  = document.querySelector("#username")
+  let contact = document.querySelector("#phone")
+  let email = document.querySelector("#email")
+  let about = document.querySelector("#about")
+  let count = 0
  
+
+  signupform.addEventListener("submit", converttable)
+
+  function converttable(e){
+    e.preventDefault()
+
+    count++
+    let tablebody = document.querySelector(".tablebody")
+    let tablerow = document.createElement("tr")
+    let tabledatahead = document.createElement("th")
+       tabledatahead.innerText = count
+    let tabledat1 = document.createElement("td")
+       tabledat1.innerText = username.value
+    let tabledat2 = document.createElement("td")
+       tabledat2.innerText = contact.value
+    let tabledat3 = document.createElement("td")
+       tabledat3.innerText = email.value
+    let tabledat4 = document.createElement("td")
+       tabledat4.innerText = about.value
+
+       
+    
+    tablebody.appendChild(tablerow)
+    tablerow.appendChild(tabledatahead)
+    tablerow.appendChild(tabledat1)
+    tablerow.appendChild(tabledat2)
+    tablerow.appendChild(tabledat3)
+    tablerow.appendChild(tabledat4)
+    
+
+
+  }
+
+
+
+
+
+
+
